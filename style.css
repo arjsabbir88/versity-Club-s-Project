@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #021526;
+    color: azure;
+}
+.headerSection{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.clubs{
+    text-align: center;
+    margin-top: 8vh;
+}
+.clubs>h1{
+    font-size: 3vw;
+}
+.clubs>p{
+    margin-left: 25vw;
+}
+.cBoxHeader{
+    margin-top: 6vh;
+}
+.selectClub{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: blueviolet; */
+
+}
+.selectClub>div{
+    display: flex;
+    justify-content: center;
+
+}
+.cBox{
+    display: flex;
+    font-size: 2vw;
+    margin-left: 1vw;
+
+}
+.cBoxs{
+    margin-top: 2vh;
+}
+.cBox>input{
+    margin-right: 0.5vw;
+    /* height: 1vw; */
+    width: 2vw;
+}
+
+/* now started input section */
+
+.inputSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    margin: 4vh auto;
+    background: linear-gradient(to right, #1E5128, #02383C);
+    padding: 8vh 5vw;
+    border-radius: 15px;
+    gap: 2vh;
+    border: 3px solid rgb(178, 127, 224);
+    box-shadow: -10px 10px 15px rgba(116, 115, 115, 0.3);
+
+}
+.inputSection input{
+    height: 8vh;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.2vw;
+    border-radius: 8px;
+    border: 2px solid #005B41;
+    padding-left: 1vw;
+    display: block;
+    outline: 2px solid #005B41;
+}
+/* now started select more about user */
+
+.selectLanguage{
+    display: flex;
+    margin-top: 2vh;
+}
+.selectLanguage>div{
+    display: flex;
+    margin-right: 1vw;
+    font-size: 1.5vw;
+}
+.selectLanguage>div>input{
+    /* margin-left: 0.2vw; */
+    width: 2vw;
+}
