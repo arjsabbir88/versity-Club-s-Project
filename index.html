@@ -10,27 +10,29 @@
 
     <section class="headerSection">
         <div class="clubs">
-            <h1>
-                Welcome to <span>CIBT Club's <span>World</span></span>
-            </h1>
-            <p>Where Innovation Meets Excellence!</p>
+            <div class="title">
+                <h1>
+                    Welcome to <span>CIBT Club's World</span>
+                </h1>
+                <p>Where Innovation Meets Excellence!</p>
+            </div>
     
             <div class="cBoxHeader">
                 <div class="selectClub">
                     <h2>
                         Select your choice:
                     </h2>
-                    <div class="cBoxs">
+                    <div class="cBoxs" id="clubContainer">
                         <div class="cBox">
-                            <input type="checkbox">
+                            <input type="checkbox" id="programmingClub">
                             <p>Programming Club</p>
                         </div>
                         <div class="cBox">
-                            <input type="checkbox">
+                            <input type="checkbox" id="sportsClub">
                             <p>Sports club</p>
                         </div>
                         <div class="cBox">
-                            <input type="checkbox">
+                            <input type="checkbox" id="culturalClub">
                             <p>Cultural Club</p>
                         </div>
                     </div>
@@ -50,36 +52,181 @@
 
     <section>
         <div class="sectionForSelection">
-            <div class="forProgramming">
-                <h3>Programming Language You know</h3>
-                <div class="selectLanguage">
-                    <div>
-                        <input type="checkbox">
-                        <p>C</p>
+            <div class="selectionContainer" id="forProgramming">
+                <div class="forProgramming">
+                    <h3>Programming Language You know</h3>
+                    <div class="selectLanguage">
+                        <div>
+                            <input type="checkbox">
+                            <p>C</p>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <p>C++</p>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <p>Java</p>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <p>Python</p>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <p>JavaScript</p>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <p>Another</p>
+                        </div>
                     </div>
-                    <div>
-                        <input type="checkbox">
-                        <p>C++</p>
+                </div>
+                <div class="forExperience">
+                    <h2>Experience Level</h2>
+                    <div class="checkboxsForExperience">
+                        <div class="intoExperience">
+                            <input type="checkbox">
+                            <p>Beginner</p>
+                        </div>
+                        <div class="intoExperience">
+                            <input type="checkbox">
+                            <p>Intermediate</p>
+                        </div>
+                        <div class="intoExperience">
+                            <input type="checkbox">
+                            <p>Advance</p>
+                        </div>
                     </div>
-                    <div>
-                        <input type="checkbox">
-                        <p>Java</p>
+                </div>
+                <div class="linkdedAccount">
+                    <p>Enter your Social Account Link</p>
+                    <input type="text" placeholder="Enter your github account">
+                    <input type="text" placeholder="Enter your linkedin account">
+                </div>
+                <div class="textarea">
+                    <textarea rows="5" cols="30" placeholder="What is your purpose for joining the club?"></textarea>
+                </div>
+            </div>
+            <div class="selectionContainer" id="forSports">
+                <div class="forProgramming">
+                    <h3>Choice your games</h3>
+                    <div class="selectLanguage">
+                        <div>
+                            <input type="checkbox">
+                            <p>Cricket</p>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <p>Football</p>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <p>Carrom</p>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <p>Chess</p>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <p>Another</p>
+                        </div>
                     </div>
-                    <div>
-                        <input type="checkbox">
-                        <p>Python</p>
+                </div>
+                <div class="forExperience">
+                    <h2>Experience Level</h2>
+                    <div class="checkboxsForExperience">
+                        <div class="intoExperience">
+                            <input type="checkbox">
+                            <p>Beginner</p>
+                        </div>
+                        <div class="intoExperience">
+                            <input type="checkbox">
+                            <p>Intermediate</p>
+                        </div>
+                        <div class="intoExperience">
+                            <input type="checkbox">
+                            <p>Advance</p>
+                        </div>
                     </div>
-                    <div>
-                        <input type="checkbox">
-                        <p>JavaScript</p>
+                </div>
+                <div class="linkdedAccount">
+                    <p>Enter your Social Account Link</p>
+                    <input type="text" placeholder="Enter your Facebook account">
+                    <input type="text" placeholder="Enter your What's app number">
+                </div>
+                <div>
+                    <textarea rows="5" cols="30" placeholder="What is your purpose for joining the club?"></textarea>
+                </div>
+            </div>
+            <div class="selectionContainer" id="forCultural">
+                <div class="forProgramming">
+                    <h3>Choose your cultural platform</h3>
+                    <div class="selectLanguage">
+                        <div>
+                            <input type="checkbox">
+                            <p>Singing</p>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <p>Dancing</p>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <p>Theater</p>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <p>Hosting</p>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <p>Poetry</p>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <p>Painting</p>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <p>Journalism</p>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <p>Another</p>
+                        </div>
                     </div>
-                    <div>
-                        <input type="checkbox">
-                        <p>Another</p>
+                </div>
+                <div class="forExperience">
+                    <h2>Experience Level</h2>
+                    <div class="checkboxsForExperience">
+                        <div class="intoExperience">
+                            <input type="checkbox">
+                            <p>Beginner</p>
+                        </div>
+                        <div class="intoExperience">
+                            <input type="checkbox">
+                            <p>Intermediate</p>
+                        </div>
+                        <div class="intoExperience">
+                            <input type="checkbox">
+                            <p>Advance</p>
+                        </div>
                     </div>
+                </div>
+                <div class="linkdedAccount">
+                    <p>Enter your Social Account Link</p>
+                    <input type="text" placeholder="Enter your github account">
+                    <input type="text" placeholder="Enter your linkedin account">
+                </div>
+                <div>
+                    <textarea rows="5" cols="30" placeholder="What is your purpose for joining the club?"></textarea>
                 </div>
             </div>
         </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>

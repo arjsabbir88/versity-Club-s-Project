@@ -11,15 +11,19 @@ body{
     max-width: 1280px;
     margin: 0 auto;
 }
+.title{
+    font-size: 5vh;
+}
 .clubs{
     text-align: center;
     margin-top: 8vh;
 }
-.clubs>h1{
-    font-size: 3vw;
+.clubs h1 span{
+    color: #04a519;
 }
-.clubs>p{
-    margin-left: 25vw;
+.title>p{
+    color: #ddca1f;
+    font-size: 4vh;
 }
 .cBoxHeader{
     margin-top: 6vh;
@@ -38,18 +42,19 @@ body{
 }
 .cBox{
     display: flex;
-    font-size: 2vw;
-    margin-left: 1vw;
+    font-size: 5vh;
+    margin-left: 2vh;
 
 }
 .cBoxs{
     margin-top: 2vh;
 }
 .cBox>input{
-    margin-right: 0.5vw;
+    margin-right: 1vh;
     /* height: 1vw; */
-    width: 2vw;
+    width: 5vh;
 }
+
 
 /* now started input section */
 
@@ -57,14 +62,15 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50vw;
+    width: 100%;
+    max-width: 50%;
     margin: 4vh auto;
-    background: linear-gradient(to right, #1E5128, #02383C);
-    padding: 8vh 5vw;
+    background: linear-gradient(to right, #11ec6c, #04a519);
+    padding: 8vh 8vh;
     border-radius: 15px;
     gap: 2vh;
-    border: 3px solid rgb(178, 127, 224);
-    box-shadow: -10px 10px 15px rgba(116, 115, 115, 0.3);
+    border: 3px solid #04a519;
+    box-shadow: -2px 5px 15px rgba(116, 115, 115, 0.3);
 
 }
 .inputSection input{
@@ -80,16 +86,125 @@ body{
 }
 /* now started select more about user */
 
-.selectLanguage{
+
+/* optional part */
+
+.sectionForSelection{
+    max-width: 1280px;
+    margin: 5vh auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 4vh;
+    /* overflow: hidden; */
+}
+.selectionContainer{
+    width: 100%;
+    max-width: 100%;
+    background: linear-gradient(to right, #005B41, #04a519);
+    border-radius: 8px;
+    margin: 0 auto;
+    padding: 4vh;
+    border: 2px solid #04a519;
+    box-shadow: -2px 5px 15px rgb(56, 55, 55);
+}
+.forExperience{
+    margin-top: 4vh;
+}
+.forProgramming{
+    width: 100%;
+    max-width: 400px;
+}
+.forProgramming>h3{
+    font-size: 3.5vh;
+}
+.checkboxsForExperience{
     display: flex;
+    font-size: 3vh;
+    gap: 3vh;
+}
+.intoExperience{
+    display: flex;
+    gap: 0.5vh;
+}
+.linkdedAccount{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    gap: 1vh;
+}
+.linkdedAccount p{
+    font-size: 3.5vh;
+}
+.linkdedAccount input{
+    width: 100%;
+    max-width: 400px;
+    height: 8vh;
+    font-size: 3vh;
+    padding-left: 2vh;
+    outline: none;
+    border-radius: 8px;
+    color: #005B41;
+}
+.selectLanguage{
+    width: 100%;
+    max-width: 350px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     margin-top: 2vh;
 }
-.selectLanguage>div{
+.selectLanguage div{
+    width: 100%;
+    max-width: 380px;
     display: flex;
-    margin-right: 1vw;
-    font-size: 1.5vw;
+    /* margin-right: 0.5vw; */
+    font-size: 3.5vh;
+    margin-right: 1vh;
+    
 }
 .selectLanguage>div>input{
-    /* margin-left: 0.2vw; */
-    width: 2vw;
+    margin-left: 0.2vh;
+    width: 3vh;
+}
+textarea{
+    margin-top: 1vh;
+    width: 100%;
+    resize: none;
+    outline: none;
+    border-radius: 8px;
+    border: 2px solid #04a519;
+    font-size: 2.5vh;
+    padding: 0.2vw;
+}
+
+@media screen and (max-width: 576px) {
+    .sectionForSelection{
+        max-width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .title{
+        font-size: 4vh;
+    }
+    .cBoxs{
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+        font-size: 5vh;
+    }
+    .cBox {
+        font-size: 5vh;
+    }
+    .cBox input{
+        width: 5vh;
+    }
+    .inputSection{
+        width: 100%;
+        max-width: 100%;
+    }
+    .inputSection input{
+        width: 100%;
+        max-width: 100%;
+        font-size: 3vh;
+    }
 }
