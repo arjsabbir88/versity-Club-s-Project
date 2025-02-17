@@ -93,7 +93,6 @@ body{
     display: block;
     outline: 2px solid #005B41;
 }
-/* now started select more about user */
 
 
 /* optional part */
@@ -146,7 +145,8 @@ body{
 }
 .linkdedAccount input{
     width: 100%;
-    max-width: 400px;
+    max-width: 95%;
+    /* max-width: 400px; */
     height: 8vh;
     font-size: 3vh;
     padding-left: 2vh;
@@ -156,7 +156,7 @@ body{
 }
 .selectLanguage{
     width: 100%;
-    max-width: 350px;
+    max-width: 90%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     margin-top: 2vh;
@@ -176,13 +176,14 @@ body{
 }
 textarea{
     margin-top: 1vh;
-    width: 100%;
+    width: 95%;
     resize: none;
     outline: none;
     border-radius: 8px;
     border: 2px solid #04a519;
     font-size: 2.5vh;
     padding: 0.2vw;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 576px) {
@@ -218,6 +219,30 @@ textarea{
         font-size: 3vh;
     }
     .selectionContainer{
-        margin: 0 auto ;
+        width: 100%;
+        max-width: 100%;
+        padding: 1vh;
+    }
+    .checkboxsForExperience{
+        width: 100%;
+        max-width: 95%;
+
+    }
+}
+@media screen and (max-width: 390px) {
+
+    .inputSection{
+        width: 100%;
+        max-width: 100%;
+    }
+    .selectionContainer{
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    .checkboxsForExperience{
+        width: 100%;
+        max-width: 95%;
+
     }
 }
