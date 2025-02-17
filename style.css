@@ -187,7 +187,8 @@ textarea{
 
 @media screen and (max-width: 576px) {
     .sectionForSelection{
-        max-width: 90%;
+        width: 100%;
+        max-width: 100%;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -215,5 +216,8 @@ textarea{
         width: 100%;
         max-width: 100%;
         font-size: 3vh;
+    }
+    .selectionContainer{
+        margin: 0 auto ;
     }
 }
