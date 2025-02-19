@@ -13,8 +13,8 @@
     font-style: normal;
   }
 body{
-    background-color: #021526;
-    color: azure;
+    background-color: #e5ecbe;
+    color: rgb(10, 10, 10);
 }
 .headerSection{
     max-width: 1280px;
@@ -23,47 +23,34 @@ body{
 .title{
     font-size: 5vh;
 }
+.title h1 span{
+    color: rgb(238, 10, 10);
+}
+.title p{
+    color: rgb(20, 105, 20);
+    font-size: 1.5vw;
+}
 .clubs{
     text-align: center;
     margin-top: 8vh;
 }
-.clubs h1 span{
-    color: #04a519;
-}
-.title>p{
-    color: #ddca1f;
-    font-size: 4vh;
-}
-.cBoxHeader{
-    margin-top: 6vh;
-}
 .selectClub{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* background-color: blueviolet; */
-
+    margin-top: 1.5vh;
 }
-.selectClub>div{
+.cBoxs{
     display: flex;
     justify-content: center;
-
+    margin-top: 3vh;
+    gap: 4vh;
 }
 .cBox{
     display: flex;
-    font-size: 5vh;
-    margin-left: 2vh;
-
+    gap: 2vh;
+    font-size: 2vw;
 }
-.cBoxs{
-    margin-top: 2vh;
+.cBox input{
+    width: 2vw;
 }
-.cBox>input{
-    margin-right: 1vh;
-    /* height: 1vw; */
-    width: 5vh;
-}
-
 
 /* now started input section */
 
@@ -72,15 +59,15 @@ body{
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    max-width: 50%;
+    max-width: 650px;
     margin: 4vh auto;
-    background: linear-gradient(to right, #11ec6c, #04a519);
-    padding: 8vh 8vh;
+    background: linear-gradient(to right, #09530d, #06cf20);
+    padding: 4vw 2vw;
     border-radius: 15px;
     gap: 2vh;
     border: 3px solid #04a519;
     box-shadow: -2px 5px 15px rgba(116, 115, 115, 0.3);
-
+    
 }
 .inputSection input{
     height: 8vh;
@@ -92,18 +79,15 @@ body{
     padding-left: 1vw;
     display: block;
     outline: 2px solid #005B41;
-}
-
-
-/* optional part */
-
+    }
 .sectionForSelection{
+
     max-width: 1280px;
-    margin: 5vh auto;
+    margin: 5vw auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 4vh;
-    /* overflow: hidden; */
+    gap: 2vw;
+
 }
 .selectionContainer{
     width: 100%;
@@ -111,68 +95,57 @@ body{
     background: linear-gradient(to right, #005B41, #04a519);
     border-radius: 8px;
     margin: 0 auto;
-    padding: 4vh;
+    padding: 2vw;
     border: 2px solid #04a519;
     box-shadow: -2px 5px 15px rgb(56, 55, 55);
 }
-.forExperience{
-    margin-top: 4vh;
+
+.selectLanguage{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 2vh;
 }
-.forProgramming{
-    width: 100%;
-    max-width: 400px;
+.selectLanguage div{
+    display: flex;
+    gap: 8px;
+    font-size: 1.5vw;
 }
-.forProgramming>h3{
-    font-size: 3.5vh;
+.selectLanguage div input{
+    width: 1.5vw;
 }
 .checkboxsForExperience{
-    display: flex;
-    font-size: 3vh;
-    gap: 3vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.3vw;
 }
 .intoExperience{
     display: flex;
-    gap: 0.5vh;
+    gap: 0.5vw;
+    font-size: 1.5vw;
+    margin-top: 2vh;
+}
+.intoExperience input{
+    width: 1.5vw;
 }
 .linkdedAccount{
     display: flex;
     flex-direction: column;
+    gap: 1vw;
     margin-top: 2vh;
-    gap: 1vh;
 }
-.linkdedAccount p{
-    font-size: 3.5vh;
+.linkdedAccount div{
+    margin-bottom: 2vh;
 }
-.linkdedAccount input{
+.linkdedAccount div input{
     width: 100%;
     max-width: 95%;
-    /* max-width: 400px; */
     height: 8vh;
     font-size: 3vh;
     padding-left: 2vh;
     outline: none;
     border-radius: 8px;
     color: #005B41;
-}
-.selectLanguage{
-    width: 100%;
-    max-width: 90%;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    margin-top: 2vh;
-}
-.selectLanguage div{
-    width: 100%;
-    max-width: 380px;
-    display: flex;
-    /* margin-right: 0.5vw; */
-    font-size: 3.5vh;
-    margin-right: 1vh;
-    
-}
-.selectLanguage>div>input{
-    margin-left: 0.2vh;
-    width: 3vh;
+    margin-bottom: 2vh;
 }
 textarea{
     margin-top: 1vh;
@@ -185,51 +158,47 @@ textarea{
     padding: 0.2vw;
     margin: 0 auto;
 }
-
-@media screen and (max-width: 576px) {
-    .sectionForSelection{
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
+    @media screen and (max-width: 576px) {
+        .cBoxs{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .cBox{
+            font-size: 8vw;
+        }
+        .cBox input{
+            width: 8vw;
+            margin-left: 5vw;
+        }
+        .title h1{
+            font-size: 10vw;
+        }
+        .title p{
+            font-size: 5vw;
+        }
+        .sectionForSelection{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            margin: 3vw;
+            gap: 2vw;
+        }
+        .selectLanguage div{
+            font-size: 5vw;
+        }
+        .selectLanguage div input{
+            width: 5vw;
+        }
+        .intoExperience{
+            font-size: 5vw;
+        }
+        .intoExperience input {
+            width: 5vw;
+        }
+        .inputSection input{
+            font-size: 6vw;
+        }
     }
-    .title{
-        font-size: 4vh;
-    }
-    .cBoxs{
-        /* background-color: aqua; */
-        display: flex;
-        flex-direction: column;
-        font-size: 5vh;
-    }
-    .cBox {
-        font-size: 5vh;
-    }
-    .cBox input{
-        width: 5vh;
-    }
-    .inputSection{
-        width: 100%;
-        max-width: 100%;
-    }
-    .inputSection input{
-        width: 100%;
-        max-width: 100%;
-        font-size: 3vh;
-    }
-    .selectionContainer{
-        width: 100%;
-        max-width: 100%;
-        padding: 1vh;
-    }
-    .checkboxsForExperience{
-        width: 100%;
-        max-width: 95%;
-
-    }
-}
-@media screen and (max-width: 390px) {
+    
 
     .inputSection{
         width: 100%;
@@ -245,4 +214,4 @@ textarea{
         max-width: 95%;
 
     }
-}
+} */
