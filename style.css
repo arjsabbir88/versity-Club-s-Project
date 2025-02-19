@@ -158,60 +158,55 @@ textarea{
     padding: 0.2vw;
     margin: 0 auto;
 }
-    @media screen and (max-width: 576px) {
-        .cBoxs{
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-        }
-        .cBox{
-            font-size: 8vw;
-        }
-        .cBox input{
-            width: 8vw;
-            margin-left: 5vw;
-        }
-        .title h1{
-            font-size: 10vw;
-        }
-        .title p{
-            font-size: 5vw;
-        }
-        .sectionForSelection{
-            display: grid;
-            grid-template-columns: repeat(1,1fr);
-            margin: 3vw;
-            gap: 2vw;
-        }
-        .selectLanguage div{
-            font-size: 5vw;
-        }
-        .selectLanguage div input{
-            width: 5vw;
-        }
-        .intoExperience{
-            font-size: 5vw;
-        }
-        .intoExperience input {
-            width: 5vw;
-        }
-        .inputSection input{
-            font-size: 6vw;
-        }
+.selectLanguage{
+    margin-top: 2vh;
+}
+.inputSection h3{
+    color: white;
+}
+@media screen and (max-width: 576px) {
+    .cBoxs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
-    
-
-    .inputSection{
-        width: 100%;
-        max-width: 100%;
+    .cBox{
+        font-size: 8vw;
+    }
+    .cBox input{
+        width: 8vw;
+        margin-left: 5vw;
+    }
+    .title h1{
+        font-size: 10vw;
+    }
+    .title p{
+        font-size: 5vw;
+    }
+    .sectionForSelection{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: 3vw;
+        gap: 2vw;
+    }
+    .selectLanguage{
+        margin-top: 2vh;
+    }
+    .selectLanguage div{
+        font-size: 5vw;
+    }
+    .selectLanguage div input{
+        width: 5vw;
+    }
+    .intoExperience{
+        font-size: 5vw;
+    }
+    .intoExperience input {
+        width: 5vw;
+    }
+    .inputSection input{
+        font-size: 6vw;
     }
     .selectionContainer{
-        width: 100%;
-        max-width: 100%;
-        padding: 0;
+        padding: 2vh;
     }
-    .checkboxsForExperience{
-        width: 100%;
-        max-width: 95%;
-
-    }
-} */
+}
