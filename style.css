@@ -16,6 +16,25 @@ body{
     background-color: #e5ecbe;
     color: rgb(10, 10, 10);
 }
+.forLogo{
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #09530d;
+    margin: 0 auto;
+    padding: 0 4vw;
+    box-shadow: -2px 5px 10px rgb(56, 55, 55);
+}
+.logo img{
+    width: 6vw;
+    cursor: pointer;
+}
+.logoText{
+    color: rgb(238, 10, 10);
+    cursor: pointer;
+}
+
 .headerSection{
     max-width: 1280px;
     margin: 0 auto;
@@ -66,7 +85,7 @@ body{
     border-radius: 15px;
     gap: 2vh;
     border: 3px solid #04a519;
-    box-shadow: -2px 5px 15px rgba(116, 115, 115, 0.3);
+    box-shadow: -2px 5px 10px rgb(56, 55, 55);
     
 }
 .inputSection input{
@@ -165,6 +184,9 @@ textarea{
     color: white;
 }
 @media screen and (max-width: 576px) {
+    .logo img{
+        width: 20vw;
+    }
     .cBoxs{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
