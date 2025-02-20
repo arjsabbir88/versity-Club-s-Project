@@ -183,6 +183,37 @@ textarea{
 .inputSection h3{
     color: white;
 }
+
+.btnDiv{
+    height: 8vh;
+    width: 100%;
+    max-width: 50vw;
+    background-color: #06cf20;
+    margin: 10vh auto;
+ }
+button{
+    height: 3vw;
+    width: 10vw;
+    font-size: 1.5vw;
+    font-weight: 900;
+    background: linear-gradient(to right, #005B41, #04a519);
+    color: white;
+    border-radius: 8px;
+    border: 1px solid #06cf20;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+} 
+button:hover{
+    background: linear-gradient(to right, #04a519, #005B41);
+}
+.btnDiv button:active{
+    transform: scale(0.0002);
+}
+
 @media screen and (max-width: 576px) {
     .logo img{
         width: 20vw;
@@ -230,5 +261,14 @@ textarea{
     }
     .selectionContainer{
         padding: 2vh;
+    }
+    .btnDiv{
+        max-width: 100%;
+        width: 100%;
+    }
+    .btnDiv button{
+        width: 30vw;
+        height: 12vw;
+        font-size: 4vw;
     }
 }

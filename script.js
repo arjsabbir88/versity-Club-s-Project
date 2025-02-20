@@ -25,8 +25,215 @@ document.addEventListener("DOMContentLoaded",function(){
         }else{
             forCultural.style.display = "none";
         }
+
     })
    }else{
-    console
+    console.log("error");
    }
 })
+
+
+
+function submitForm(){
+    let selectedClubs = [];
+    if (document.getElementById("programmingClub").checked){
+        selectedClubs.push("Programming Club");
+    } 
+    
+    if (document.getElementById("sportsClub").checked) selectedClubs.push("Sports Club");
+    if (document.getElementById("culturalClub").checked) selectedClubs.push("Cultural Club");
+    
+    let formData = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        number: document.getElementById("number").value,
+        department: document.getElementById("department").value,
+        batch: document.getElementById("batch").value,
+        studentId: document.getElementById("studentId").value
+    };
+
+    for(let selectedClub of selectedClubs){
+        let sheetName = "";
+        if(selectedClub === "Sports Club"){
+            sheetName = "sportsClub";
+        }
+        if(selectedClub === "Cultural Club" ){
+            sheetName = "culturalClub";
+        }
+        if(selectedClub === "Programming Club"){
+            sheetName = "programmingClub";
+        }
+
+        transferDataToGoogleSheet(sheetName,formData , selectedClubs)
+    }
+
+}
+
+function transferDataToGoogleSheet(sheetName, objectData, selectedClubs) {
+
+    let name = objectData.name;
+    let email = objectData.email;
+    let number = objectData.number;
+    let department = objectData.department;
+    let batch = objectData.batch;
+    let studentId = objectData.studentId;
+
+    let programmingLanguages = [];
+    if (sheetName === "programmingClub") {
+        if (document.getElementById("C").checked) programmingLanguages.push("C");
+        if (document.getElementById("cpp").checked) programmingLanguages.push("C++");
+        if (document.getElementById("java").checked) programmingLanguages.push("Java");
+        if (document.getElementById("python").checked) programmingLanguages.push("Python");
+        if (document.getElementById("javascript").checked) programmingLanguages.push("JavaScript");
+        if (document.getElementById("prolog").checked) programmingLanguages.push("Prolog");
+        if (document.getElementById("another").checked) programmingLanguages.push("Another");
+    }
+    var experienceLevels = [];
+    if (document.getElementById("beginner").checked) experienceLevels.push("Beginner");
+    if (document.getElementById("intermediate").checked) experienceLevels.push("Intermediate");
+    if (document.getElementById("advance").checked) experienceLevels.push("Advance");
+    if (document.getElementById("expert").checked) experienceLevels.push("Expert");
+
+    let forSportEvent = [];
+
+    if (document.getElementById("Cricket").checked) forSportEvent.push("Cricket");
+    if (document.getElementById("Football").checked) forSportEvent.push("Football");
+    if (document.getElementById("Carrom").checked) forSportEvent.push("Carrom");
+    if (document.getElementById("Chess").checked) forSportEvent.push("Chess");
+    if (document.getElementById("Another").checked) forSportEvent.push("Another");
+
+    let forCulturalEvent = [];
+
+    if (document.getElementById("Singing").checked) forCulturalEvent.push("Singing");
+    if (document.getElementById("Dancing").checked) forCulturalEvent.push("Dancing");
+    if (document.getElementById("Theater").checked) forCulturalEvent.push("Theater");
+    if (document.getElementById("Hosting").checked) forCulturalEvent.push("Hosting");
+    if (document.getElementById("Poetry").checked) forCulturalEvent.push("Poetry");
+    if (document.getElementById("Painting").checked) forCulturalEvent.push("Painting");
+    if (document.getElementById("Journalism").checked) forCulturalEvent.push("Journalism");
+    if (document.getElementById("Design").checked) forCulturalEvent.push("Design");
+    if (document.getElementById("Another").checked) forCulturalEvent.push("Another");
+
+
+    let whatsapp = "";
+    let facebook = "";
+    let purpose = "";
+    let github = "";
+    let linkedin = "";
+
+    if (sheetName === "programmingClub") {
+        github = document.getElementById("github").value;
+        linkedin = document.getElementById("linkedin").value;
+    } 
+ 
+    if (sheetName === "programmingClub") {
+        whatsapp = document.getElementById("whatsapp").value;
+        purpose = document.getElementById("purpose").value;
+    } else if (sheetName === "sportsClub") {
+        whatsapp = document.getElementById("whatsapp1").value;
+        facebook = document.getElementById("facebook").value;
+        purpose = document.getElementById("purpose1").value;
+    } else if (sheetName === "culturalClub") {
+        whatsapp = document.getElementById("whatsapp2").value;
+        facebook = document.getElementById("facebook").value;
+        purpose = document.getElementById("purpose2").value;
+    }
+    if (sheetName === "programmingClub") {
+        purpose = document.getElementById("purpose").value;
+    } else if (sheetName === "sportsClub") {
+        purpose = document.getElementById("purpose1").value;
+    } else if (sheetName === "culturalClub") {
+        purpose = document.getElementById("purpose2").value;
+    }
+  
+    if (sheetName === "sportsClub" || sheetName === "culturalClub") {
+        facebook = document.getElementById("facebook").value;
+    }
+
+    if (sheetName === "programmingClub") {
+        whatsapp = document.getElementById("whatsapp").value;
+    } else if (sheetName === "sportsClub") {
+        whatsapp = document.getElementById("whatsapp1").value;
+    } else if (sheetName === "culturalClub") {
+        whatsapp = document.getElementById("whatsapp2").value;
+    }
+
+    let urls = "";
+    if(sheetName=== "sportsClub"){
+        urls = "https://script.google.com/macros/s/AKfycbzIbniPHM0yv-4dS35O2OHZEfcql75PHwVKYrsSKSO56DWNtB-0YNxpQipT5M12QJG2/exec";
+    }else if(sheetName === "culturalClub"){
+        urls = "https://script.google.com/macros/s/AKfycbwALIoVzp5LtYcXEZmu9Qbe7Re6dmoPw8sJq69TMz9T9R9OIVydSYSmy4hrncZsILErEw/exec";
+    }else if(sheetName === "programmingClub"){
+        urls = "https://script.google.com/macros/s/AKfycbwdpb4BloO76s3hX3HsDmX_GqCPG5aeIPdnSbbzeJ7NNn9mutpzqpBQLQp17bA_O-eijA/exec";
+    }
+
+    let data = {};
+
+    if(sheetName === "programmingClub"){
+        data = {
+            name: name,
+            email: email,
+            number: number,
+            department: department,
+            batch: batch,
+            studentId: studentId,
+            selectedClubs: selectedClubs.join(", "),
+            programmingLanguages: programmingLanguages.join(", "),
+            experienceLevels: experienceLevels.join(", "),
+            github: github,
+            linkedin: linkedin,
+            purpose: purpose
+        };
+    }else if(sheetName === "culturalClub"){
+        data = {
+            name: name,
+            email: email,
+            number: number,
+            department: department,
+            batch: batch,
+            studentId: studentId,
+            selectedClubs: selectedClubs.join(", "),
+            culturalEvent: forCulturalEvent.join(", "),
+            experienceLevels: experienceLevels.join(", "),
+            facebook: facebook,
+            whatsapp: whatsapp,
+            purpose: purpose
+            
+        };
+
+    }else if(sheetName === "sportsClub"){
+        
+        data = {
+            name: name,
+            email: email,
+            number: number,
+            department: department,
+            batch: batch,
+            studentId: studentId,
+            selectedClubs: selectedClubs.join(", "),
+            sportEvent: forSportEvent.join(", "),
+            experienceLevels: experienceLevels.join(", "),
+            facebook: facebook,
+            whatsapp: whatsapp,
+            purpose: purpose
+        };
+    }
+
+
+    fetch(urls, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    }).then(response => {
+        alert("Data submitted successfully!");
+        document.getElementById("form").reset(); 
+    }).catch(error => {
+        console.error("Error:", error);
+        document.getElementById("form").reset(); 
+    });
+
+
+}

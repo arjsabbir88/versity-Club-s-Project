@@ -49,13 +49,14 @@
         </div>
     </section>
     <section>
-        <div class="inputSection">
+        <div class="inputSection" id="form">
             <h3>Enter your document :</h3>
-            <input type="text"  placeholder="Enter your full name" required>
-            <input type="email" placeholder="Enter your email"  required>
-            <input type="text"  placeholder="Enter your valid number" required>
-            <input type="text"  placeholder="Enter your Department" required>
-            <input type="text"  placeholder="Enter your student Id number" required>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <input type="text" id="number" placeholder="Enter your valid number" required>
+            <input type="text" id="department" placeholder="Enter your Department" required>
+            <input type="text" id="batch" placeholder="Enter your batch" required>
+            <input type="text" id="studentId" placeholder="Enter your student Id number" required>
         </div>
     </section>
 
@@ -66,31 +67,31 @@
                     <h3>Programming Language You know</h3>
                     <div class="selectLanguage">
                         <div>
-                            <input type="checkbox">
+                            <input type="checkbox" id="C">
                             <p>C</p>
                         </div>
                         <div>
-                            <input type="checkbox">
+                            <input type="checkbox" id="cpp">
                             <p>C++</p>
                         </div>
                         <div>
-                            <input type="checkbox">
+                            <input type="checkbox" id="java">
                             <p>Java</p>
                         </div>
                         <div>
-                            <input type="checkbox">
+                            <input type="checkbox" id= "python">
                             <p>Python</p>
                         </div>
                         <div>
-                            <input type="checkbox">
+                            <input type="checkbox" id="javascript">
                             <p>JavaScript</p>
                         </div>
                         <div>
-                            <input type="checkbox">
+                            <input type="checkbox" id="prolog">
                             <p>Prolog</p>
                         </div>
                         <div>
-                            <input type="checkbox">
+                            <input type="checkbox" id="another">
                             <p>Another</p>
                         </div>
                     </div>
@@ -99,19 +100,19 @@
                     <h2>Experience Level</h2>
                     <div class="checkboxsForExperience">
                         <div class="intoExperience">
-                            <input type="checkbox">
+                            <input type="checkbox" id="beginner">
                             <p>Beginner</p>
                         </div>
                         <div class="intoExperience">
-                            <input type="checkbox">
+                            <input type="checkbox" id="intermediate">
                             <p>Intermediate</p>
                         </div>
                         <div class="intoExperience">
-                            <input type="checkbox">
+                            <input type="checkbox" id="advance">
                             <p>Advance</p>
                         </div>
                         <div class="intoExperience">
-                            <input type="checkbox">
+                            <input type="checkbox" id="expert">
                             <p>Expert</p>
                         </div>
                         
@@ -120,12 +121,13 @@
                 <div class="linkdedAccount">
                     <h3>Social Account Link</h3>
                     <div>
-                        <input type="text" placeholder="Enter your github account">
-                        <input type="text" placeholder="Enter your linkedin account">
+                        <input type="text" placeholder="Enter your github account" id="github">
+                        <input type="text" placeholder="Enter your linkedin account" id="linkedin">
+                        <input type="text" placeholder="Enter your what's app number" id="whatsapp" required>
                     </div>
                 </div>
                 <div class="textarea">
-                    <textarea rows="5" cols="30" placeholder="What is your purpose for joining the club?"></textarea>
+                    <textarea rows="5" cols="30" placeholder="What is your purpose for joining the club?" id="purpose" required></textarea>
                 </div>
             </div>
             <div class="selectionContainer" id="forSports">
@@ -133,23 +135,23 @@
                     <h3>Choice your games</h3>
                     <div class="selectLanguage">
                         <div>
-                            <input type="checkbox">
+                            <input type="checkbox" id="Cricket">
                             <p>Cricket</p>
                         </div>
                         <div>
-                            <input type="checkbox">
+                            <input type="checkbox" id="Football">
                             <p>Football</p>
                         </div>
                         <div>
-                            <input type="checkbox">
+                            <input type="checkbox" id="Carrom">
                             <p>Carrom</p>
                         </div>
                         <div>
-                            <input type="checkbox">
+                            <input type="checkbox" id="Chess">
                             <p>Chess</p>
                         </div>
                         <div>
-                            <input type="checkbox">
+                            <input type="checkbox" id="Another">
                             <p>Another</p>
                         </div>
                     </div>
@@ -158,19 +160,19 @@
                     <h2>Experience Level</h2>
                     <div class="checkboxsForExperience">
                         <div class="intoExperience">
-                            <input type="checkbox">
+                            <input type="checkbox" id="beginner">
                             <p>Beginner</p>
                         </div>
                         <div class="intoExperience">
-                            <input type="checkbox">
+                            <input type="checkbox" id="intermediate">
                             <p>Intermediate</p>
                         </div>
                         <div class="intoExperience">
-                            <input type="checkbox">
+                            <input type="checkbox" id="advance">
                             <p>Advance</p>
                         </div>
                         <div class="intoExperience">
-                            <input type="checkbox">
+                            <input type="checkbox" id="expert">
                             <p>Expert</p>
                         </div>
                         
@@ -179,12 +181,12 @@
                 <div class="linkdedAccount">
                     <h3>Social Account Link</h3>
                     <div>
-                        <input type="text" placeholder="Enter your github account">
-                        <input type="text" placeholder="Enter your linkedin account">
+                        <input type="text" placeholder="Enter your facebook account" id="facebook">
+                        <input type="text" placeholder="Enter your what's app number" id="whatsapp1" required>
                     </div>
                 </div>
                 <div>
-                    <textarea rows="5" cols="30" placeholder="What is your purpose for joining the club?"></textarea>
+                    <textarea rows="5" cols="30" placeholder="What is your purpose for joining the club?" id="purpose1"></textarea>
                 </div>
             </div>
             <div class="selectionContainer" id="forCultural">
@@ -192,39 +194,39 @@
                     <h3>Choose your cultural platform</h3>
                     <div class="selectLanguage">
                         <div>
-                            <input type="checkbox">
+                            <input type="checkbox" id="Singing">
                             <p>Singing</p>
                         </div>
                         <div>
-                            <input type="checkbox">
+                            <input type="checkbox" id="Dancing">
                             <p>Dancing</p>
                         </div>
                         <div>
-                            <input type="checkbox">
+                            <input type="checkbox" id="Theater">
                             <p>Theater</p>
                         </div>
                         <div>
-                            <input type="checkbox">
+                            <input type="checkbox" id="Hosting">
                             <p>Hosting</p>
                         </div>
                         <div>
-                            <input type="checkbox">
+                            <input type="checkbox" id="Poetry">
                             <p>Poetry</p>
                         </div>
                         <div>
-                            <input type="checkbox">
+                            <input type="checkbox" id="Painting">
                             <p>Painting</p>
                         </div>
                         <div>
-                            <input type="checkbox">
+                            <input type="checkbox" id="Journalism">
                             <p>Journalism</p>
                         </div>
                         <div>
-                            <input type="checkbox">
-                            <p>Art</p>
+                            <input type="checkbox" id="Design">
+                            <p>Design</p>
                         </div>
                         <div>
-                            <input type="checkbox">
+                            <input type="checkbox" id="Another">
                             <p>Another</p>
                         </div>
                     </div>
@@ -233,19 +235,19 @@
                     <h2>Experience Level</h2>
                     <div class="checkboxsForExperience">
                         <div class="intoExperience">
-                            <input type="checkbox">
+                            <input type="checkbox" id="beginner">
                             <p>Beginner</p>
                         </div>
                         <div class="intoExperience">
-                            <input type="checkbox">
+                            <input type="checkbox" id="intermediate">
                             <p>Intermediate</p>
                         </div>
                         <div class="intoExperience">
-                            <input type="checkbox">
+                            <input type="checkbox" id="advance">
                             <p>Advance</p>
                         </div>
                         <div class="intoExperience">
-                            <input type="checkbox">
+                            <input type="checkbox" id="expert">
                             <p>Expert</p>
                         </div>
                     </div>
@@ -253,16 +255,18 @@
                 <div class="linkdedAccount">
                     <h3>Social Account Link</h3>
                     <div>
-                        <input type="text" placeholder="Enter your github account">
-                        <input type="text" placeholder="Enter your linkedin account">
+                        <input type="text" placeholder="Enter your Facebook account" id="facebook">
+                        <input type="text" placeholder="Enter your What's app Number" required id="whatsapp2">
                     </div>
                 </div>
                 <div>
-                    <textarea rows="5" cols="30" placeholder="What is your purpose for joining the club?"></textarea>
+                    <textarea rows="5" cols="30" placeholder="What is your purpose for joining the club?" id="purpose2"></textarea>
                 </div>
             </div>
         </div>
     </section>
+
+    <button onclick=submitForm() id="btn"> Submit </button>
 
     <script src="script.js"></script>
 </body>
