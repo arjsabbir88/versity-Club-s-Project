@@ -184,13 +184,6 @@ textarea{
     color: white;
 }
 
-.btnDiv{
-    height: 8vh;
-    width: 100%;
-    max-width: 50vw;
-    background-color: #06cf20;
-    margin: 10vh auto;
- }
 button{
     height: 3vw;
     width: 10vw;
@@ -205,13 +198,13 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 2vh auto;
 } 
 button:hover{
     background: linear-gradient(to right, #04a519, #005B41);
 }
-.btnDiv button:active{
-    transform: scale(0.0002);
+button:active{
+    transform: scale(0.9);
 }
 
 @media screen and (max-width: 576px) {
@@ -262,13 +255,9 @@ button:hover{
     .selectionContainer{
         padding: 2vh;
     }
-    .btnDiv{
-        max-width: 100%;
-        width: 100%;
-    }
-    .btnDiv button{
-        width: 30vw;
-        height: 12vw;
-        font-size: 4vw;
+    button{
+        width: 40vw;
+        height: 14vw;
+        font-size: 5vw;
     }
 }

@@ -3,10 +3,12 @@ document.addEventListener("DOMContentLoaded",function(){
     const forProgramming = document.querySelector("#forProgramming");
     const forCultural = document.querySelector("#forCultural");
     const forSport = document.querySelector("#forSports");
+    let btn = document.getElementById("btn");
 
     forProgramming.style.display = "none";
     forCultural.style.display = "none";
     forSport.style.display = "none";
+    btn.style.display = "none";
 
    if(clubContainer){
     clubContainer.addEventListener("change",function(event){
@@ -24,6 +26,21 @@ document.addEventListener("DOMContentLoaded",function(){
             forCultural.style.display = "block";
         }else{
             forCultural.style.display = "none";
+        }
+
+        if (
+            document.querySelector("#programmingClub").checked ||
+            document.querySelector("#sportsClub").checked ||
+            document.querySelector("#culturalClub").checked
+        ) {
+            btn.style.display = "block";
+        }
+        if (
+            !document.querySelector("#programmingClub").checked &&
+            !document.querySelector("#sportsClub").checked &&
+            !document.querySelector("#culturalClub").checked
+        ) {
+            btn.style.display = "none";
         }
 
     })
@@ -164,7 +181,7 @@ function transferDataToGoogleSheet(sheetName, objectData, selectedClubs) {
     }else if(sheetName === "culturalClub"){
         urls = "https://script.google.com/macros/s/AKfycbwALIoVzp5LtYcXEZmu9Qbe7Re6dmoPw8sJq69TMz9T9R9OIVydSYSmy4hrncZsILErEw/exec";
     }else if(sheetName === "programmingClub"){
-        urls = "https://script.google.com/macros/s/AKfycbwdpb4BloO76s3hX3HsDmX_GqCPG5aeIPdnSbbzeJ7NNn9mutpzqpBQLQp17bA_O-eijA/exec";
+        urls = "https://script.google.com/macros/s/AKfycbwxGwAaoZ9_TjNW4FePdOdY40nr4XOK2Vkrw9CSc0sbmgfO4Ba9InjZKAWN54fa0DO-Uw/exec";
     }
 
     let data = {};
@@ -182,6 +199,7 @@ function transferDataToGoogleSheet(sheetName, objectData, selectedClubs) {
             experienceLevels: experienceLevels.join(", "),
             github: github,
             linkedin: linkedin,
+            whatsapp: whatsapp,
             purpose: purpose
         };
     }else if(sheetName === "culturalClub"){
