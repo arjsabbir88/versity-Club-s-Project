@@ -247,10 +247,10 @@ function transferDataToGoogleSheet(sheetName, objectData, selectedClubs) {
         body: JSON.stringify(data)
     }).then(response => {
         alert("Data submitted successfully!");
-        document.getElementById("form").reset(); 
+        location.reload(); 
     }).catch(error => {
         console.error("Error:", error);
-        document.getElementById("form").reset(); 
+        location.reload(); 
     });
 
 
