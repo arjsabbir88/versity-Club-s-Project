@@ -206,7 +206,71 @@ button:hover{
 button:active{
     transform: scale(0.9);
 }
+.footer{
+    max-width: 100%;
+    width: 100%;
+    background-color: #01130e;
+    color: white;
+    padding: 4vw;
+}
+.footer-Container{
+    max-width: 70vw;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.clg-info{
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.clg-info h1:hover{
+    color: #035c37;
+    letter-spacing: 2px;
+}
+.clg-info img{
+    max-width: 10vw;
+    width: 100%;
+    
+}
+.clg-info a i{
+    color: #fff;
+    font-size: 2vw;
+    margin-left: 10px;
+}
+.clg-info a i:hover{
+    color: #035c37;
+}
 
+.containers{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+    margin-top: 6vh;
+}
+.teachers{
+    text-align: center;
+}
+.containers div a{
+    color: #fff;
+}
+.containers a i {
+    margin-right: 6px;
+    font-size: 1.5vw;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.madeBy{
+    margin: 6vh auto;
+    color: #035c37;
+    text-align: center;
+}
 @media screen and (max-width: 576px) {
     .logo img{
         width: 20vw;
@@ -259,5 +323,23 @@ button:active{
         width: 40vw;
         height: 14vw;
         font-size: 5vw;
+    }
+    .clg-info a i{
+        font-size: 8vw;
+    }
+    .clg-info img{
+        max-width: 15vw;
+        width: 100%;
+    }
+    .containers{
+        flex-direction: column;
+    }
+    .containers a i {
+        margin-right: 8vw;
+        font-size: 5vw;
+    }
+    .contact{
+        margin-top: 2vh;
+        text-align: center;
     }
 }
