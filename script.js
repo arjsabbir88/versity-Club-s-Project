@@ -177,11 +177,11 @@ function transferDataToGoogleSheet(sheetName, objectData, selectedClubs) {
 
     let urls = "";
     if(sheetName=== "sportsClub"){
-        urls = "https://script.google.com/macros/s/AKfycbzIbniPHM0yv-4dS35O2OHZEfcql75PHwVKYrsSKSO56DWNtB-0YNxpQipT5M12QJG2/exec";
+        urls = "https://script.google.com/macros/s/AKfycbwtq91K1Qo81NQKhEKkrDwyKVCZm9yLNK_hfyBQkCSdWF_QzLeUykjhg29wcqmE3oAn/exec";
     }else if(sheetName === "culturalClub"){
-        urls = "https://script.google.com/macros/s/AKfycbwALIoVzp5LtYcXEZmu9Qbe7Re6dmoPw8sJq69TMz9T9R9OIVydSYSmy4hrncZsILErEw/exec";
+        urls = "https://script.google.com/macros/s/AKfycbySC2FQglOR_RUZ4-tFjgtLMDvRyvwWgXo6miEFzkiE7HGaErpVyep8Y221T6RzW8L73g/exec";
     }else if(sheetName === "programmingClub"){
-        urls = "https://script.google.com/macros/s/AKfycbwxGwAaoZ9_TjNW4FePdOdY40nr4XOK2Vkrw9CSc0sbmgfO4Ba9InjZKAWN54fa0DO-Uw/exec";
+        urls = "https://script.google.com/macros/s/AKfycbwIYs3oWAtbYdV43DC_1mZXVCJkBVz-1VTw55zN9nS6PDW_8Nxl3SfdOxX09rBrZmHn/exec";
     }
 
     let data = {};
